@@ -136,3 +136,21 @@ To cite Mesa in your publication, you can refer to our peer-reviewed article in 
 - ter Hoeven, E., Kwakkel, J., Hess, V., Pike, T., Wang, B., rht, & Kazil, J. (2025). Mesa 3: Agent-based modeling with Python in 2025. Journal of Open Source Software, 10(107), 7668. https://doi.org/10.21105/joss.07668
 
 Our [CITATION.cff](https://github.com/mesa/mesa/blob/main/CITATION.cff) can be used to generate APA, BibTeX and other citation formats.
+
+## Use of Generative AI
+
+Maintainers may use generative AI tools as assistants while working on mesa. Non-trivial assisted commits disclose the tool, model, and scope of the work.
+
+AI tools may assist with code comments, documentation, repetitive code, and issue triage. Maintainers make project decisions and review every assisted change before it is merged.
+
+Use these trailers for non-trivial assisted commits:
+
+```plain
+Assisted-by: <tool>:<model-version>
+AI-Scope: <what the tool generated and the prompt or a short prompt summary>
+```
+
+Single-line completions, renames, and formatting changes do not need trailers.
+
+Coding agents must also follow [AGENTS.md](AGENTS.md) before changing files,
+creating commits, or opening pull requests.
